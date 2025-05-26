@@ -57,9 +57,11 @@
             // txt_sifre
             // 
             txt_sifre.Location = new Point(50, 288);
+            txt_sifre.Mask = "00000";
             txt_sifre.Name = "txt_sifre";
             txt_sifre.Size = new Size(162, 27);
             txt_sifre.TabIndex = 2;
+            txt_sifre.ValidatingType = typeof(int);
             txt_sifre.Visible = false;
             // 
             // lbl_sifre

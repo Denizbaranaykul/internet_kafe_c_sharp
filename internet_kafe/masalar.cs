@@ -64,12 +64,12 @@ namespace internet_kafe
                 updateCmd.ExecuteNonQuery();
 
                 MessageBox.Show("Masa açıldı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                timer1.Start();
                 // Resmi güncelle:
                 pb.Image = Properties.Resources.kırmızı; 
                 giris.baglanti.Conn.Close();
-                masa_no = masa_no;
-                this.Close();
+                masalar.masa_no = masaNo;
+                this.Hide();
                 kullanıcı kullanıcı = new kullanıcı();
                 kullanıcı.Show();
             }

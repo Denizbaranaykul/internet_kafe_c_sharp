@@ -6,6 +6,7 @@ namespace internet_kafe
 {
     public partial class giris : Form
     {
+        public static int sifre = 12345;
         public giris()
         {
             InitializeComponent();
@@ -25,9 +26,14 @@ namespace internet_kafe
                 lbl_sifre.Visible = true;
                 txt_sifre.Visible = true;
             }
+            else if(Convert.ToInt32(txt_sifre.Text)==12345)
+            {
+                yonetici yonetici = new yonetici();
+                yonetici.Show();
+            }
             else
             {
-
+                MessageBox.Show("þifre yanlýþ");
             }
         }
 

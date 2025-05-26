@@ -63,6 +63,16 @@ namespace internet_kafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cay {
+            get {
+                object obj = ResourceManager.GetObject("cay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kırmızı {
             get {
                 object obj = ResourceManager.GetObject("kırmızı", resourceCulture);

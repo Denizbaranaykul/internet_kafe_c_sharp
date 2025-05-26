@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            components = new System.ComponentModel.Container();
+            lbl_masa_no = new Label();
             richTextBox1 = new RichTextBox();
-            label2 = new Label();
+            lbl_sure = new Label();
             label3 = new Label();
             btn_yorum = new Button();
             panel1 = new Panel();
@@ -50,9 +51,22 @@
             dataGridView1 = new DataGridView();
             tabControl2 = new TabControl();
             tabPage3 = new TabPage();
+            label6 = new Label();
+            pictureBox_çay = new PictureBox();
             tabPage4 = new TabPage();
             tabPage5 = new TabPage();
             tabPage6 = new TabPage();
+            lbl_ucret = new Label();
+            checkedListBox1 = new CheckedListBox();
+            btn_onayla = new Button();
+            label5 = new Label();
+            lbl_sepet = new Label();
+            btn_sil = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            label7 = new Label();
+            pictureBox_nescafe = new PictureBox();
+            label8 = new Label();
+            pictureBox_ıhlamur = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -60,17 +74,23 @@
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tabControl2.SuspendLayout();
+            tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_çay).BeginInit();
+            tabPage4.SuspendLayout();
+            tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_nescafe).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ıhlamur).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lbl_masa_no
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 15.7F);
-            label1.Location = new Point(25, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(161, 32);
-            label1.TabIndex = 30;
-            label1.Text = "Masa No : ";
+            lbl_masa_no.AutoSize = true;
+            lbl_masa_no.Font = new Font("Verdana", 15.7F);
+            lbl_masa_no.Location = new Point(25, 20);
+            lbl_masa_no.Name = "lbl_masa_no";
+            lbl_masa_no.Size = new Size(161, 32);
+            lbl_masa_no.TabIndex = 30;
+            lbl_masa_no.Text = "Masa No : ";
             // 
             // richTextBox1
             // 
@@ -80,15 +100,15 @@
             richTextBox1.TabIndex = 31;
             richTextBox1.Text = "";
             // 
-            // label2
+            // lbl_sure
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Verdana", 15.7F);
-            label2.Location = new Point(339, 31);
-            label2.Name = "label2";
-            label2.Size = new Size(343, 32);
-            label2.TabIndex = 32;
-            label2.Text = "masada geçirilen süre : ";
+            lbl_sure.AutoSize = true;
+            lbl_sure.Font = new Font("Verdana", 15.7F);
+            lbl_sure.Location = new Point(232, 20);
+            lbl_sure.Name = "lbl_sure";
+            lbl_sure.Size = new Size(343, 32);
+            lbl_sure.TabIndex = 32;
+            lbl_sure.Text = "masada geçirilen süre : ";
             // 
             // label3
             // 
@@ -279,35 +299,60 @@
             tabControl2.Location = new Point(25, 98);
             tabControl2.Name = "tabControl2";
             tabControl2.SelectedIndex = 0;
-            tabControl2.Size = new Size(905, 440);
+            tabControl2.Size = new Size(397, 440);
             tabControl2.TabIndex = 37;
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(label6);
+            tabPage3.Controls.Add(pictureBox_çay);
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(897, 407);
+            tabPage3.Size = new Size(389, 407);
             tabPage3.TabIndex = 0;
             tabPage3.Text = "sıcak içecekler";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(38, 91);
+            label6.Name = "label6";
+            label6.Size = new Size(70, 20);
+            label6.TabIndex = 12;
+            label6.Text = "çay 20 TL";
+            // 
+            // pictureBox_çay
+            // 
+            pictureBox_çay.Image = Properties.Resources.cay;
+            pictureBox_çay.Location = new Point(6, 15);
+            pictureBox_çay.Name = "pictureBox_çay";
+            pictureBox_çay.Size = new Size(121, 73);
+            pictureBox_çay.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_çay.TabIndex = 0;
+            pictureBox_çay.TabStop = false;
+            // 
             // tabPage4
             // 
+            tabPage4.Controls.Add(label7);
+            tabPage4.Controls.Add(pictureBox_nescafe);
             tabPage4.Location = new Point(4, 29);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(897, 407);
+            tabPage4.Size = new Size(389, 407);
             tabPage4.TabIndex = 1;
             tabPage4.Text = "soğuk içecekler";
             tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(label8);
+            tabPage5.Controls.Add(pictureBox_ıhlamur);
             tabPage5.Location = new Point(4, 29);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(897, 407);
+            tabPage5.Size = new Size(389, 407);
             tabPage5.TabIndex = 2;
             tabPage5.Text = "atıştırmaklık";
             tabPage5.UseVisualStyleBackColor = true;
@@ -317,21 +362,127 @@
             tabPage6.Location = new Point(4, 29);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(897, 407);
+            tabPage6.Size = new Size(389, 407);
             tabPage6.TabIndex = 3;
             tabPage6.Text = "yemekler";
             tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // lbl_ucret
+            // 
+            lbl_ucret.AutoSize = true;
+            lbl_ucret.Font = new Font("Verdana", 15.7F);
+            lbl_ucret.Location = new Point(643, 20);
+            lbl_ucret.Name = "lbl_ucret";
+            lbl_ucret.Size = new Size(219, 32);
+            lbl_ucret.TabIndex = 38;
+            lbl_ucret.Text = "toplam ücret : ";
+            // 
+            // checkedListBox1
+            // 
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Location = new Point(428, 142);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(286, 290);
+            checkedListBox1.TabIndex = 39;
+            // 
+            // btn_onayla
+            // 
+            btn_onayla.Location = new Point(451, 485);
+            btn_onayla.Name = "btn_onayla";
+            btn_onayla.Size = new Size(124, 49);
+            btn_onayla.TabIndex = 40;
+            btn_onayla.Text = "sepeti onayla";
+            btn_onayla.UseVisualStyleBackColor = true;
+            btn_onayla.Click += btn_onayla_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Verdana", 15.7F);
+            label5.Location = new Point(428, 98);
+            label5.Name = "label5";
+            label5.Size = new Size(227, 32);
+            label5.TabIndex = 41;
+            label5.Text = "siparişler sepeti";
+            // 
+            // lbl_sepet
+            // 
+            lbl_sepet.AutoSize = true;
+            lbl_sepet.Font = new Font("Verdana", 15.7F);
+            lbl_sepet.Location = new Point(451, 438);
+            lbl_sepet.Name = "lbl_sepet";
+            lbl_sepet.Size = new Size(204, 32);
+            lbl_sepet.TabIndex = 42;
+            lbl_sepet.Text = "sepet tutarı : ";
+            // 
+            // btn_sil
+            // 
+            btn_sil.Location = new Point(581, 485);
+            btn_sil.Name = "btn_sil";
+            btn_sil.Size = new Size(133, 49);
+            btn_sil.TabIndex = 43;
+            btn_sil.Text = "seçilenleri çıkar";
+            btn_sil.UseVisualStyleBackColor = true;
+            btn_sil.Click += btn_sil_Click;
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(29, 91);
+            label7.Name = "label7";
+            label7.Size = new Size(98, 20);
+            label7.TabIndex = 45;
+            label7.Text = "nescafe 20 TL";
+            // 
+            // pictureBox_nescafe
+            // 
+            pictureBox_nescafe.Image = Properties.Resources.cay;
+            pictureBox_nescafe.Location = new Point(18, 15);
+            pictureBox_nescafe.Name = "pictureBox_nescafe";
+            pictureBox_nescafe.Size = new Size(121, 73);
+            pictureBox_nescafe.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_nescafe.TabIndex = 44;
+            pictureBox_nescafe.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(21, 82);
+            label8.Name = "label8";
+            label8.Size = new Size(92, 20);
+            label8.TabIndex = 45;
+            label8.Text = "ıhlamur 20 tl";
+            // 
+            // pictureBox_ıhlamur
+            // 
+            pictureBox_ıhlamur.Image = Properties.Resources.cay;
+            pictureBox_ıhlamur.Location = new Point(6, 6);
+            pictureBox_ıhlamur.Name = "pictureBox_ıhlamur";
+            pictureBox_ıhlamur.Size = new Size(121, 73);
+            pictureBox_ıhlamur.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_ıhlamur.TabIndex = 44;
+            pictureBox_ıhlamur.TabStop = false;
             // 
             // kullanıcı
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1812, 557);
+            Controls.Add(btn_sil);
+            Controls.Add(lbl_sepet);
+            Controls.Add(label5);
+            Controls.Add(btn_onayla);
+            Controls.Add(checkedListBox1);
+            Controls.Add(lbl_ucret);
             Controls.Add(tabControl2);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lbl_sure);
+            Controls.Add(lbl_masa_no);
             Name = "kullanıcı";
             Text = "kullanıcı";
             panel1.ResumeLayout(false);
@@ -343,15 +494,24 @@
             tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabControl2.ResumeLayout(false);
+            tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_çay).EndInit();
+            tabPage4.ResumeLayout(false);
+            tabPage4.PerformLayout();
+            tabPage5.ResumeLayout(false);
+            tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_nescafe).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ıhlamur).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private Label lbl_masa_no;
         private RichTextBox richTextBox1;
-        private Label label2;
+        private Label lbl_sure;
         private Label label3;
         private Button btn_yorum;
         private Panel panel1;
@@ -374,5 +534,18 @@
         private TabPage tabPage4;
         private TabPage tabPage5;
         private TabPage tabPage6;
+        private Label lbl_ucret;
+        private CheckedListBox checkedListBox1;
+        private Button btn_onayla;
+        private Label label5;
+        private PictureBox pictureBox_çay;
+        private Label label6;
+        private Label lbl_sepet;
+        private Button btn_sil;
+        private System.Windows.Forms.Timer timer1;
+        private Label label7;
+        private PictureBox pictureBox_nescafe;
+        private Label label8;
+        private PictureBox pictureBox_ıhlamur;
     }
 }
